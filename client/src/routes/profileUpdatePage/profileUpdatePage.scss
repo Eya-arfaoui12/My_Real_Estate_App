@@ -1,0 +1,164 @@
+.profileUpdatePage {
+    height: 100%;
+    display: flex;
+  
+
+    .formContainer {
+     
+      flex: 3;
+      display: flex;
+      flex-direction: column; /* Changement ici */
+      align-items: center;
+      margin-top: 50px;
+      margin-right: 50px;
+      justify-content: center;
+  
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        h1 {
+          font-family: 'Playfair Display', serif;
+          font-style: italic;
+          color: #4c4934;
+          margin-bottom: 50px;
+        }
+  
+        .item {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+            
+          label {
+            font-style: italic;
+          }
+  
+          .password-container {
+            display: flex;
+            align-items: center;
+  
+            .input-field {
+              border: none;
+              border-bottom: 1px solid #9f9975; // Bordure seulement en bas
+              padding: 8px;
+              outline: none; // Supprime la bordure de focus
+              width: 60vh; // Ajustez selon vos besoins
+              background-color: #100f14;
+              
+              &:focus {
+                border-color: #f1eedf; // Couleur de la bordure lors du focus
+              }
+            }
+  
+            .toggle-password {
+              margin-left: 10px;
+              background: none;
+              border: none;
+              cursor: pointer;
+              color: #9f9975;
+              font-size: 1.2rem; // Taille de l'icône
+              outline: none;
+  
+              &:hover {
+                color: #f1eedf;
+              }
+            }
+          }
+  
+          input {
+            border: none;
+            border-bottom: 1px solid #9f9975; // Bordure seulement en bas
+            padding: 8px;
+            outline: none; // Supprime la bordure de focus
+            width: 70vh;
+            background-color: #100f14;
+            font-family: 'Playfair Display', serif;
+            color: #4c4934;
+            font-style: italic;
+                            
+            &:focus {
+              border-color: #f1eedf; // Couleur de la bordure lors du focus
+            }
+          }
+        }
+      }
+  
+      button {
+        padding: 10px 50px;
+        background-color: #d78b30;
+        color: #1a191f;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        position: relative;
+        margin-top: 20px; /* Ajouter un espace au-dessus du bouton */
+       
+  
+        &:hover {
+          scale: 1.05; 
+          color: #9f9975; 
+          background-color: #1a191f;
+        }
+      }
+  
+      span {
+        color: red;
+      }
+
+      button {
+        padding: 10px 50px;
+        background-color: #d78b30;
+        color: #1a191f;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        position: relative;
+        margin-top: 20px; /* Ajouter un espace au-dessus du bouton */
+       
+  
+        &:hover {
+          scale: 1.05; 
+          color: #575548; 
+          background-color: #1a191f;
+        }
+      }
+    }
+    
+    button {
+        padding: 5px 20px;
+        background-color: #100f14;
+        color: #575548;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        position: relative;
+        margin-top: 50px; /* Ajouter un espace au-dessus du bouton */
+       
+  
+        &:hover {
+          scale: 1.05; 
+          color: #1a191f;
+          background-color: #d78b30;
+        }
+      }
+  
+    .sideContainer {
+        
+        flex: 2;
+        background-color: #1a191f;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        margin-right: 50px;
+    
+        .avatar{
+          width: 50%;
+          object-fit: cover;
+        }
+      }
+  }
+  

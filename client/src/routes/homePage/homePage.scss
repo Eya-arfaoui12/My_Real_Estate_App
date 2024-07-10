@@ -1,0 +1,105 @@
+@import "../../responsive.scss";
+.homePage{
+    display: flex;
+    margin-left: -20px;
+    height: 100%;
+    
+    
+    .textContainer{
+        flex: 3;
+        margin-left: 40px;
+        
+        .wrapper{
+            padding-right: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+            height: 100%;
+
+            @include md{
+                padding: 10px;
+                overflow-y: scroll;
+            }
+
+            @include sm{
+                justify-content: flex-start;
+            }
+            .title{
+                width: 400;
+                font-size: 48px;
+                font-style: italic;
+
+                @include lg{
+                    font-size: 48px;
+                }
+            }
+            .boxes{
+                display: flex;
+                justify-content: space-between;
+                
+
+                @include sm{
+                    display: none;
+                }
+            }
+
+            h1{
+                font-size: 36px;
+                font-family: 'Playfair Display', serif;
+                color: #9f9975;
+                text-decoration: none;
+                margin-right: 20px;
+
+                @include lg{
+                    font-size: 32px;
+                }
+                
+            
+            }
+
+            p{
+                font-family: 'Playfair Display', serif;
+                color: #4d4d4d;
+                font-style: italic;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+            h2{
+                font-size: 17px;
+                font-weight: 300;
+                font-family: 'Playfair Display', serif;
+                color: #3b3835;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .imgContainer{
+        flex: 2;
+        background-color: #100f14;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+       @include md{
+        display: none;
+       }
+        img{
+            width: 120%;
+            right: 0;
+            transform: rotate(-90deg);
+
+            
+            
+        }
+
+        @include lg{
+            width: 105%;
+        }
+
+
+    }
+}

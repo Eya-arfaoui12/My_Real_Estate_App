@@ -1,0 +1,31 @@
+@import "../../responsive.scss";
+.layout{
+    background-color: hsl(252, 14%, 7%);
+    height: 100vh;
+    font-family: 'Playfair Display', serif;
+    color: #9f9975;
+    flex-direction: column;
+    padding-left: 100px;
+
+
+
+    @include lg{
+        // background-color: blueviolet;
+        // max-width: 1280px;
+    }
+
+    @include md{
+        // background-color: coral;
+        // max-width: 768px;
+    }
+
+    @include sm{
+        // background-color: red;
+        // max-width: 640px;
+    }
+   
+    .content{
+        // flex: 1;
+    }
+   
+}

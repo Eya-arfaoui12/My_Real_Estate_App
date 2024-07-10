@@ -1,0 +1,255 @@
+@import "../../responsive.scss";
+.singlePage {
+    display: flex;
+    overflow-y: scroll ;
+    height: calc(100vh - 100px  );
+    
+
+    @include md{
+        flex-direction: column;
+        overflow-y: auto;
+            
+    }
+    
+    &::-webkit-scrollbar {
+        width: 7px; 
+    }
+
+    .details {
+        flex: 3;
+        height: 100%;
+       
+
+        @include md{
+            flex: none;
+            height: max-content;
+            margin-bottom: 20px;
+        }
+
+        .wrapper {
+            padding-right: 10px;
+            font-family: 'Playfair Display', serif;
+            
+            
+
+            .info {
+                margin-top: 5px;
+
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .post {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        
+
+                        h1 {
+                            font-weight: 400;
+                            font-family: 'Playfair Display', serif;
+                            color: #9f9975;
+                            font-size: 20px;
+                        }
+
+                        .address {
+                            display: flex;
+                            gap: 5px;
+                            align-items: center;
+                            color: #9f9975;
+                            font-size: 14px;
+
+                            img {
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+
+                        .price {
+                            padding: 5px;
+                            background-color: #1a191f;
+                            border-radius: 5px;
+                            width: max-content;
+                            font-size: 15px;
+                            font-weight: 300;
+                        }
+                    }
+
+                    .user {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+                        padding: 0px 50px;
+                        border-radius: 10px;
+                        background-color: #1a191f;
+                        font-weight: 600;
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                    }
+
+                }
+
+                .bottom {
+                    margin-top: 40px;
+                    font-family: 'Playfair Display', serif;
+                    font-style: italic;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+    .features {
+        flex: 2;
+        background-color: #1a191f;
+        padding-top: 5px;
+        // margin-right: 100px;
+        height: calc(100vh - 100px  );
+        
+
+        @include md{
+            flex: none;
+            height: max-content;
+            margin-bottom: 10px;
+        }
+
+        .wrapper {
+            padding: 0px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+
+            
+            img {
+                width: 17px;
+                height: 17px;
+               
+            }
+
+            .title {
+                font-weight: bold;
+                font-size: 14px;
+                margin-bottom: 5px;
+                margin-top: 5px;
+                font-family: 'Playfair Display', serif;
+                color: #9f9975;
+            }
+
+            .feature {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    background-color: #100f14;
+                    
+                }
+
+                .featureText {
+                    span {
+                        font-weight: bold;
+                        font-size: 12px;
+                        
+                        
+                    }
+                    p {
+                        font-size: 10px;
+                       
+                       
+                    }
+                }
+            }
+
+            .listVertical {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px 10px;
+                background-color: #100f14;
+                border-radius: 10px;
+            }
+
+            .listHorizontal {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 10px;
+                background-color: #100f14;
+                border-radius: 10px;
+            }
+
+            .sizes {
+                display: flex;
+                justify-content: space-between;
+
+                @include lg{
+                    font-size: 12px;
+                }
+
+                .size {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    background-color: #100f14;
+                    border-radius: 5px;
+                    padding: 10px;
+                    font-size: 14px;
+                    font-family: 'Playfair Display', serif;
+                    color: #9f9975;
+                }
+            }
+
+            .map {
+                width: 120%;
+                height: 200px; 
+                
+            }
+
+            .buttons{
+                display: flex;
+                justify-content: space-between;
+                
+
+                button{
+                    padding: 7px;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    background-color: #100f14;
+                    border: 1px solid #b9b09b;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    cursor: pointer;
+                    font-family: 'Playfair Display', serif;
+                    color: #9f9975;
+                    margin-bottom: 8px;
+                    font-size: 14px;
+                        
+
+                    &:hover{
+                        
+                        background-color: #d78b30;
+                        color: black;
+                    }
+                    
+                    img{
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+            }
+
+        }
+
+        
+    }
+
+    
+}

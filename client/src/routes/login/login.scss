@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        max-width: 1000px;
+        background-color: #1A191F;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+
+    .formContainer {
+        flex: 1;
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #1A191F;
+        color: #fff;
+        background-image: url('/bgImg.jpg');
+        background-size: cover; /* Adjust as needed */
+        background-position: center; /* Adjust as needed */
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 50px;
+            color: #d78b30;
+            margin-top: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #1A191F;
+            font-size: 12px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            label {
+                margin-bottom: 5px;
+            }
+
+            input {
+                padding: 10px 20px; /* Adjust padding as needed */
+                font-size: 14px; /* Adjust font size as needed */
+                width: 1000px; /* Ensure input takes full width of its container */
+                max-width: 300px;/* Adjust font size as needed */
+                border: 1px solid #9F9975;
+                border-radius: 5px;
+                background-color: #1A191F;
+                color: #9F9975;
+                font-family: 'Playfair Display', serif;
+            }
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            color: #fff;
+            font-size: 12px;
+
+            input[type="checkbox"] {
+                margin-right: 10px;
+            }
+
+            label {
+                color: #fff;
+                font-family: 'Playfair Display', serif;
+            }
+        }
+
+        button {
+            padding: 10px 30px;
+            border-radius: 5px;
+            border: none;
+            background-color: #d78b30;
+            margin-right: 10px;
+            color: #1A191F;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: 'Playfair Display', serif;
+
+            &:hover {
+                scale: 1.05;
+                color: #9f9975;
+                background-color: #100f14;
+            }
+        }
+
+        span {
+            color: rgba(255, 0, 0, 0.591);
+        }
+
+        a {
+            color: #fff;
+            font-size: 14px;
+            margin-top: 50px;
+            display: inline-block;
+        }
+    }
+}
