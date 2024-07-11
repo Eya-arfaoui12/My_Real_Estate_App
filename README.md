@@ -30,10 +30,12 @@ To get started with our Real Estate Application, follow these steps:
    cd Real_Estate_APP
 
 2. **Install dependencies:**
-   $npm install
-
+    ```bash
+    npm install
+    
 3. **Start the development server:**
+   ```bash
    $npm start
    $npm run dev
-
-   Open your browser and navigate to http://localhost:5173 to view the application.
+   
+  Open your browser and navigate to http://localhost:5173 to view the application.
